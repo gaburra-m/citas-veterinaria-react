@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Formulario from "./components/Formulario"
 import Header from "./components/Header"
 import ListadoPacientes from "./components/ListadoPacientes"
+import Footer from "./components/Footer"
 
 function App() {
   const INITIAL = JSON.parse(localStorage.getItem("pacientes"))
@@ -36,6 +37,7 @@ function App() {
           eliminarPaciente={eliminarPaciente}
         />
       </main>
+      <Footer />
     </div>
   )
 }

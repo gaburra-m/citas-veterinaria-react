@@ -29,7 +29,7 @@ function Paciente({ paciente, setPaciente, eliminarPaciente }) {
         Síntomas: <span className="font-normal normal-case">{sintomas}</span>
       </p>
 
-      <div className="flex justify-between mt-10">
+      <div className="flex justify-between gap-2 mt-10">
         <button
           className="px-10 py-2 font-bold text-white uppercase bg-indigo-600 rounded-md hover:bg-indigo-700"
           onClick={() => setPaciente(paciente)}
