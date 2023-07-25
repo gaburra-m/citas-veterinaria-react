@@ -5,7 +5,7 @@ import ListadoPacientes from "./components/ListadoPacientes"
 
 function App() {
   const INITIAL = JSON.parse(localStorage.getItem("pacientes"))
-  const [pacientes, setPacientes] = useState(INITIAL)
+  const [pacientes, setPacientes] = useState(INITIAL ?? [])
   const [paciente, setPaciente] = useState({})
 
   useEffect(() => {
